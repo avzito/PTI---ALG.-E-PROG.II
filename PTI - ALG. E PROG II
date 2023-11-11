@@ -1,0 +1,36 @@
+Program.cs
+using System;
+
+class Program {
+    public static void Main (string[] args)
+{
+
+Material m1 = new Material ();
+m1.Nome = "Tylenol";
+m1.Preco = 19.00
+m1.Laboratorio = "HNS";
+m1.Estoque = 0;
+
+Material m2 = new Material ();
+m2.Nome = "Cerumin";
+m2.Preco = 14.00
+m2.Laboratorio = "NOVARTIS";
+m2.Estoque = 0;
+
+Material m3 = new Material ();
+m3.Nome = "Biofenac";
+m3.Preco = 10.00
+m3.Laboratorio = "Aché";
+m3.Estoque = 0;
+
+GerenDeEstoque gerenciador = new GerenDeEstoque ();
+gerenciador.Adicionar(m1);
+gerenciador.Adicionar(m2);
+gerenciador.Adicionar(m3);
+
+gerenciador.Listar();
+
+}
+
+
+}
