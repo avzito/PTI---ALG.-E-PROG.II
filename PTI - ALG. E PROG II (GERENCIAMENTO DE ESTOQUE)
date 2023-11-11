@@ -1,0 +1,52 @@
+GerenDeEstoque.cs
+class GerenDeEstoque
+{
+    Material[] material = new Material[0]; //VETOR >> variável criada na class
+
+    public void Adicionar(Material novoMaterial)
+    {
+        //CRIA/CLONA UM VETOR COM UMA POSIÇÃO A MAIS, POIS Ñ É POSSÍVEL ADD NOVAS POSIÇÕES AO VETOR
+        Material[] novoVetor = new Material[matrial.length + 1];
+
+        //COPIA OS ITENS DO VETOR PRINCIPAL PARA O NOVO VETOR 
+        for (int pos = 0; pos < material.length; pos++)
+        {
+            novoVetor[pos] = material[pos];
+        }
+
+        //INCLUI O NOVO ITEM
+        novoVetor[novoVetor.length-1] = novoMaterial;
+
+        //ATUALIZA O VETOR PRINCIPAL 
+        matrial = novoVetor; //Atualizaçao da variável 
+
+    }
+
+    public void Listar()
+    {
+        Console.WriteLine("\n\n=== LISTA DE MATERAIS ===\n")
+        for (int pos =0; pos < material.length; pos++)
+        {
+            Console.WriteLine($"{pos+1}. {item.Nome} - {item.Laboratorio}, R$ {item.Preco}, ({item.Estoque}");
+
+        }
+        
+    }
+
+    public void Remover(int posicao)
+    {
+
+    }
+
+    public void EntradaEstoque(int posicao, int qtd)
+    {
+
+    }
+
+    public void SaidaEstoque(int posicao, int qtd)
+    {
+
+
+    }
+
+}
