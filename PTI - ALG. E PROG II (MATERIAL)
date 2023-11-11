@@ -1,0 +1,13 @@
+Material.cs 
+class Material
+{
+    public string Nome { get; set; }
+
+    public double Preco { get; set; }
+
+    public int Estoque { get; set; }
+
+    public string Laboratorio {get; set;}
+
+    //FALTAM MAIS DOIS ATRIBUTOS 
+}
